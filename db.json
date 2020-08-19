@@ -1,0 +1,26 @@
+{
+    "categorias": [
+        {
+            "id": 1,
+            "nome": "Cubing",
+            "descricao": "Vídeos de resoluções, tutoriais e dicas sobre cubo mágico.",
+            "cor": "cbd1ff"
+        },
+
+        {
+            "id": 2,
+            "nome": "Code",
+            "descricao": "Vídeos sobre programação e suas tecnologias.",
+            "cor": "cbd1ff"
+        },
+
+        {
+            "id": 3,
+            "nome": "Games",
+            "descricao": "Vídeos sobre os jogos atuais e também os que marcaram época.",
+            "cor": "cbd1ff"
+        }
+    
+    ]
+
+}
