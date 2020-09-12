@@ -1,26 +1,158 @@
 {
-    "categorias": [
-        {
-            "id": 1,
-            "nome": "Cubing",
-            "descricao": "Vídeos de resoluções, tutoriais e dicas sobre cubo mágico.",
-            "cor": "cbd1ff"
-        },
-
-        {
-            "id": 2,
-            "nome": "Code",
-            "descricao": "Vídeos sobre programação e suas tecnologias.",
-            "cor": "cbd1ff"
-        },
-
-        {
-            "id": 3,
-            "nome": "Games",
-            "descricao": "Vídeos sobre os jogos atuais e também os que marcaram época.",
-            "cor": "cbd1ff"
-        }
-    
-    ]
-
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Cubing Time",
+      "cor": "#A020F0"
+    },
+    {
+      "id": 2,
+      "titulo": "Games",
+      "cor": "#800000"
+    },
+    {
+      "id": 3,
+      "titulo": "Movies",
+      "cor": "#054f77"
+    },
+    {
+      "id": 4,
+      "titulo": "Other",
+      "cor": "#8B008B"
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "7.44 Rubik's Cube Single",
+      "url": "https://www.youtube.com/watch?v=8o5PSKDsMuA"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "10.36 Rubik's Cube 3x3 ao5",
+      "url": "https://www.youtube.com/watch?v=blEp8A4Ryx4"
+    },
+    {
+      "titulo": "6x6: 1:51.72 single",
+      "url": "https://www.youtube.com/watch?v=qfXoQ6iVTwM",
+      "categoriaId": 1,
+      "id": 3
+    },
+    {
+      "titulo": "Oficina Open 2015 - Rafael Campos - Single 3x3 One handed 18.48",
+      "url": "https://www.youtube.com/watch?v=NcARhQIKVOg",
+      "categoriaId": 1,
+      "id": 4
+    },
+    {
+      "titulo": "32.83 single 4x4",
+      "url": "https://www.youtube.com/watch?v=0JLE80THCDw",
+      "categoriaId": 1,
+      "id": 5
+    },
+    {
+      "titulo": "8.80 Rubik's Cube 3x3",
+      "url": "https://www.youtube.com/watch?v=RQewZwrj3HY",
+      "categoriaId": 1,
+      "id": 6
+    },
+    {
+      "titulo": "7x7 3:06.25 single",
+      "url": "https://www.youtube.com/watch?v=1k47AF-ZYx0",
+      "categoriaId": 1,
+      "id": 7
+    },
+    {
+      "titulo": "MK 11",
+      "url": "https://www.youtube.com/watch?v=Cwofr3L_vIo",
+      "categoriaId": 2,
+      "id": 8
+    },
+    {
+      "titulo": "Injustice 2",
+      "url": "https://www.youtube.com/watch?v=hX0WA6yIZ7I",
+      "categoriaId": 2,
+      "id": 9
+    },
+    {
+      "titulo": "Killer instinct",
+      "url": "https://www.youtube.com/watch?v=Z1FgmHRPtLU",
+      "categoriaId": 2,
+      "id": 10
+    },
+    {
+      "titulo": "Street Fighter V",
+      "url": "https://www.youtube.com/watch?v=XS5R1g1U_Jw",
+      "categoriaId": 2,
+      "id": 11
+    },
+    {
+      "titulo": "Samurai Shodown",
+      "url": "https://www.youtube.com/watch?v=m3gJzUU_TnE",
+      "categoriaId": 2,
+      "id": 12
+    },
+    {
+      "titulo": "Avengers End Game",
+      "url": "https://www.youtube.com/watch?v=TcMBFSGVi1c",
+      "categoriaId": 3,
+      "id": 13
+    },
+    {
+      "titulo": "Justice League",
+      "url": "https://www.youtube.com/watch?v=3cxixDgHUYw",
+      "categoriaId": 3,
+      "id": 14
+    },
+    {
+      "id": 18,
+      "categoriaId": 3,
+      "titulo": "Gattaca",
+      "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+    },
+    {
+      "id": 19,
+      "categoriaId": 3,
+      "titulo": "A Chegada",
+      "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+    },
+    {
+      "id": 20,
+      "categoriaId": 3,
+      "titulo": "Feitiço do Tempo",
+      "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+    },
+    {
+      "id": 21,
+      "categoriaId": 2,
+      "titulo": "Final Fantasy 7",
+      "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+    },
+    {
+      "id": 22,
+      "categoriaId": 2,
+      "titulo": "Assassins Creed Valhalla",
+      "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+    },
+    {
+      "id": 23,
+      "categoriaId": 2,
+      "titulo": "God of War 4",
+      "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+    },
+    {
+      "id": 24,
+      "categoriaId": 2,
+      "titulo": "Resident Evil 8",
+      "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+    },
+    {
+      "titulo": "Panic At The Disc",
+      "url": "https://www.youtube.com/watch?v=e3MRf6BZ0LM",
+      "categoriaId": 4,
+      "id": 25
+    }
+  ]
 }

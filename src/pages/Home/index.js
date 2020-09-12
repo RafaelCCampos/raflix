@@ -1,46 +1,54 @@
-import React from 'react';
-import Menu from '../../components/Menu';
+import React, { useEffect, useState } from 'react';
+import PageDefault from '../../components/PageDefault';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
-import Footer from '../../components/Footer';
-import dadosIniciais from '../../data/dados_iniciais.json';
+import categoriasRepository from '../../repositories/categorias';
 
 function Home() {
-  return (
-    <div style={{ background: "#141414"}}>
-      <Menu/>
-      <BannerMain
-        videoTitle={dadosIniciais.categorias[3].videos[0].titulo}
-        url={dadosIniciais.categorias[3].videos[0].url}
-        videoDescription={"In Earth's future, a global crop blight and second Dust Bowl are slowly rendering the planet uninhabitable. Professor Brand (Michael Caine), a brilliant NASA physicist, is working on plans to save mankind by transporting Earth's population to a new home via a wormhole. But first, Brand must send former NASA pilot Cooper (Matthew McConaughey) and a team of researchers through the wormhole and across the galaxy to find out which of three planets could be mankind's new home."}
-      />
 
-      <Carousel
-        ignoreFirstVideo
-        category={dadosIniciais.categorias[0]}
-      />
-      <Carousel
-        ignoreFirstVideo
-        category={dadosIniciais.categorias[1]}
-      />  
-      <Carousel
-        ignoreFirstVideo
-        category={dadosIniciais.categorias[2]}
-      />
-      <Carousel
-        ignoreFirstVideo
-        category={dadosIniciais.categorias[3]}
-      />
-      <Carousel
-        ignoreFirstVideo
-        category={dadosIniciais.categorias[4]}
-      />
-      <Carousel
-        ignoreFirstVideo
-        category={dadosIniciais.categorias[5]}
-      />
-      <Footer/>
-    </div>
+  const [dadosIniciais, setDadosIniciais] = useState([]);
+  useEffect( () => {
+    categoriasRepository.getAllWithVideos()
+        .then((categoriasComVideos) => {
+            console.log({categoriasComVideos})
+            setDadosIniciais(categoriasComVideos);
+    })
+    .catch((err) => {
+      console.log(err.message);
+    });
+  }, []);
+
+  return (
+    <PageDefault paddingAll={0}>
+      {dadosIniciais.length === 0 && (<div>Loading...</div>)}
+
+      {dadosIniciais.map((categoria, indice) => {
+        if (indice === 0) {
+          return (
+            <div key={categoria.id}>
+              <BannerMain
+                videoTitle={dadosIniciais[0].videos[0].titulo}
+                url={dadosIniciais[0].videos[0].url}
+                videoDescription={"Resolução do cubo mágico 6x6x6, um dos meus melhores tempos nessa que é minha categoria principal."}
+              />
+
+              <Carousel
+                ignoreFirstVideo
+                category={dadosIniciais[0]}
+              />
+            </div>
+          );
+      }
+      
+      return (
+        <Carousel
+          key={categoria.id}
+          category={categoria}
+        />  
+      );
+    })}  
+
+    </PageDefault>
   );
 }
 
